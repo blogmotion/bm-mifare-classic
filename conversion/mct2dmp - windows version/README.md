@@ -5,9 +5,7 @@ mct2dmpGui (windows)
 Voici la version Windows, développée en C# par [Xavier Averbouch](http://legacy.averbouch.biz/), disposant d'une interface graphique. Elle peut convertir les dumps Mifare classic tool en dump nfc-mfc classic et réciproquement.
 L'application détecte automatiquement s'il s'agit d'un dump de l'une ou l'autre version.
 
-Elle utilise le framework dotnet 4.7.2 et une version prête à l'emploi :
-- [est disponible ici](https://github.com/xavave/bm-mifare-classic/releases),
-- [et ici](https://github.com/blogmotion/bm-mifare-classic/tree/master/conversion/mct2dmp%20-%20windows%20version/EXE)
+Elle utilise le framework dotnet 4.7.2 et une version prête à l'emploi est [zippée ici](https://github.com/xavave/bm-mifare-classic/releases) ([et ici](./EXE))
 
 Dezipper le fichier lancer *mct2dmpGui.exe*
 
@@ -19,9 +17,7 @@ Dezipper le fichier lancer *mct2dmpGui.exe*
 Here is the Windows version, developed in C# by [Xavier Averbouch](http://legacy.averbouch.biz/), with a graphical user interface. It can convert Mifare classic tool dumps into nfc-mfc classic dumps and vice versa.
 The application automatically detects if it is a dump of either version.
 
-It uses the dotnet 4.7.2 framework and a compiled version (ready to use) :
-- [is zipped here](https://github.com/xavave/bm-mifare-classic/releases),
-- [and here](https://github.com/blogmotion/bm-mifare-classic/tree/master/conversion/mct2dmp%20-%20windows%20version/EXE)
+It uses the dotnet 4.7.2 framework and a compiled version (ready to use) is [zipped here](https://github.com/xavave/bm-mifare-classic/releases) ([and here](./EXE))
 
 Just unzip the file and run *mct2dmpGui.exe*
 
