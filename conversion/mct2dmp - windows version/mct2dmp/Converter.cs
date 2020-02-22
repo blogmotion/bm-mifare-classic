@@ -27,14 +27,14 @@ namespace mct2dmp
         public FileType CheckDump(string filename)
         {
             FileText = File.ReadAllText(filename);
-            if (FileText.ToString().StartsWith("+Sector:"))
+            FileInfo fi = new FileInfo(filename);
+            if (FileText.ToString().StartsWith("+Sector:") || (fi.Length != 1024 && fi.Length != 4096))
                 return FileType.Text;
             else
                 return FileType.Binary;
 
 
-        }
-        public Dump ConvertToBinaryDump()
+        }       public Dump ConvertToBinaryDump()
         {
             var ret = new List<Byte>();
             var md = new Dump()
@@ -48,16 +48,19 @@ namespace mct2dmp
             return md;
         }
 
-        public Dump ConvertToTextDump(string filename)
+        public Dump ConvertToTextDump(string filename, bool bInsertSector = true)
         {
             var bytesData = File.ReadAllBytes(filename);
             string hex = BitConverter.ToString(bytesData).Replace("-", string.Empty);
             var md = new Dump();
-          
+
             md.Lines = Split(hex, 32);
-            int sector = (md.Lines.Count - 4) / 4;
-            for (int i = md.Lines.Count - 4; i >= 0; i -= 4)
-                md.Lines.Insert(i, $"+Sector: {sector--}\r\n");
+            if (bInsertSector)
+            {
+                int sector = (md.Lines.Count - 4) / 4;
+                for (int i = md.Lines.Count - 4; i >= 0; i -= 4)
+                    md.Lines.Insert(i, $"+Sector: {sector--}\n");
+            }
 
             md.TextOutput = new string(md.Lines.SelectMany(c => c).ToArray());
 

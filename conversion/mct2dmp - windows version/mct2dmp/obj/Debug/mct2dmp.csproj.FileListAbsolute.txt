@@ -1,0 +1,5 @@
+C:\Users\xavie\source\repos\mct2dmpSharp\mct2dmp\bin\Debug\mct2dmp.dll
+C:\Users\xavie\source\repos\mct2dmpSharp\mct2dmp\bin\Debug\mct2dmp.pdb
+C:\Users\xavie\source\repos\mct2dmpSharp\mct2dmp\obj\Debug\mct2dmp.csprojAssemblyReference.cache
+C:\Users\xavie\source\repos\mct2dmpSharp\mct2dmp\obj\Debug\mct2dmp.dll
+C:\Users\xavie\source\repos\mct2dmpSharp\mct2dmp\obj\Debug\mct2dmp.pdb
