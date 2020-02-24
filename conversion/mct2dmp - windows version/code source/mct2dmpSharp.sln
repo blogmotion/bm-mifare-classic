@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mct2dmpGui", "mct2dmpGui\mct2dmpGui.csproj", "{864CB016-DC3A-4AE7-A337-C1E673B8E913}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mct2dmp", "mct2dmp\mct2dmp.csproj", "{04A947F7-D8AA-46AE-919F-F2BE59830EF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{864CB016-DC3A-4AE7-A337-C1E673B8E913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864CB016-DC3A-4AE7-A337-C1E673B8E913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864CB016-DC3A-4AE7-A337-C1E673B8E913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864CB016-DC3A-4AE7-A337-C1E673B8E913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A947F7-D8AA-46AE-919F-F2BE59830EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A947F7-D8AA-46AE-919F-F2BE59830EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A947F7-D8AA-46AE-919F-F2BE59830EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A947F7-D8AA-46AE-919F-F2BE59830EF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {785AA952-A805-4863-A60E-B45959AE15D0}
+	EndGlobalSection
+EndGlobal
