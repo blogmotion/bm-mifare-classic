@@ -11,6 +11,8 @@ Dezipper le fichier lancer *mct2dmpGui.exe*
 
 ![screenshot](https://user-images.githubusercontent.com/3501675/72763510-6289c600-3be4-11ea-8f86-c58f5ad7d16d.png)
 
+## Sortie d'un nouvel outil équivalent à MCT pour Windows : [Mifare Windows Tool](https://github.com/xavave/Mifare-Windows-Tool) (par @xavave)
+
 ### English version
 
 ### [EN] Description
@@ -22,3 +24,5 @@ It uses the dotnet 4.7.2 framework and a compiled version (ready to use) is [zip
 Just unzip the file and run *mct2dmpGui.exe*
 
 [screenshot](https://user-images.githubusercontent.com/3501675/72763510-6289c600-3be4-11ea-8f86-c58f5ad7d16d.png)
+
+## Release of a new tool equivalent to MCT for Windows : [Mifare Windows Tool](https://github.com/xavave/Mifare-Windows-Tool) (by @xavave)
