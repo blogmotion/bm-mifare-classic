@@ -37,11 +37,16 @@
             this.ckConvertToEml = new System.Windows.Forms.CheckBox();
             this.btnOpenFolder = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnConvert
             // 
-            this.btnConvert.Location = new System.Drawing.Point(307, 13);
+            this.btnConvert.Location = new System.Drawing.Point(309, 60);
             this.btnConvert.Margin = new System.Windows.Forms.Padding(4);
             this.btnConvert.Name = "btnConvert";
             this.btnConvert.Size = new System.Drawing.Size(153, 37);
@@ -53,7 +58,7 @@
             // lblSource
             // 
             this.lblSource.AutoSize = true;
-            this.lblSource.Location = new System.Drawing.Point(13, 13);
+            this.lblSource.Location = new System.Drawing.Point(13, 66);
             this.lblSource.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSource.Name = "lblSource";
             this.lblSource.Size = new System.Drawing.Size(233, 25);
@@ -79,7 +84,7 @@
             // lblInfos
             // 
             this.lblInfos.AutoSize = true;
-            this.lblInfos.Location = new System.Drawing.Point(13, 81);
+            this.lblInfos.Location = new System.Drawing.Point(13, 141);
             this.lblInfos.Name = "lblInfos";
             this.lblInfos.Size = new System.Drawing.Size(0, 25);
             this.lblInfos.TabIndex = 2;
@@ -87,7 +92,7 @@
             // ckConvertToEml
             // 
             this.ckConvertToEml.AutoSize = true;
-            this.ckConvertToEml.Location = new System.Drawing.Point(18, 42);
+            this.ckConvertToEml.Location = new System.Drawing.Point(18, 95);
             this.ckConvertToEml.Name = "ckConvertToEml";
             this.ckConvertToEml.Size = new System.Drawing.Size(255, 29);
             this.ckConvertToEml.TabIndex = 3;
@@ -99,7 +104,7 @@
             // btnOpenFolder
             // 
             this.btnOpenFolder.Enabled = false;
-            this.btnOpenFolder.Location = new System.Drawing.Point(307, 58);
+            this.btnOpenFolder.Location = new System.Drawing.Point(309, 105);
             this.btnOpenFolder.Margin = new System.Windows.Forms.Padding(4);
             this.btnOpenFolder.Name = "btnOpenFolder";
             this.btnOpenFolder.Size = new System.Drawing.Size(153, 63);
@@ -108,21 +113,62 @@
             this.btnOpenFolder.UseVisualStyleBackColor = true;
             this.btnOpenFolder.Click += new System.EventHandler(this.btnOpenFolder_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(28, 28);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(469, 38);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem,
+            this.blogToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(40, 34);
+            this.toolStripMenuItem1.Text = "?";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.aboutToolStripMenuItem.Text = "Github link";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // blogToolStripMenuItem
+            // 
+            this.blogToolStripMenuItem.Name = "blogToolStripMenuItem";
+            this.blogToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.blogToolStripMenuItem.Text = "Blogmotion link";
+            this.blogToolStripMenuItem.Click += new System.EventHandler(this.blogToolStripMenuItem_Click);
+            // 
             // FrmMct2DMpSharpGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 124);
+            this.ClientSize = new System.Drawing.Size(469, 178);
             this.Controls.Add(this.btnOpenFolder);
             this.Controls.Add(this.ckConvertToEml);
             this.Controls.Add(this.lblInfos);
             this.Controls.Add(this.lblSource);
             this.Controls.Add(this.btnConvert);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(493, 242);
             this.Name = "FrmMct2DMpSharpGui";
             this.Text = "mct2dmpSharp Gui";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,6 +184,10 @@
         private System.Windows.Forms.CheckBox ckConvertToEml;
         private System.Windows.Forms.Button btnOpenFolder;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem blogToolStripMenuItem;
     }
 }
 

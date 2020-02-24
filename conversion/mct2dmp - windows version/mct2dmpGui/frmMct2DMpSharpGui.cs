@@ -87,5 +87,16 @@ namespace mct2dmpGui
             if (File.Exists(sfd1.FileName))
                 Process.Start("explorer.exe", $"/select, {sfd1.FileName}");
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/blogmotion/bm-mifare-classic");
+            
+        }
+
+        private void blogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://blogmotion.fr/programmation/mct2dmpgui-windows-18235");
+        }
     }
 }
